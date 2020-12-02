@@ -107,6 +107,7 @@ public class FormController {
 		roles.add("ROLE_USER");
 		roles.add("ROLE_MODERATOR");
 		return roles;
+		//comitando
 	}
 	
 	@ModelAttribute("listaRolesMap")
