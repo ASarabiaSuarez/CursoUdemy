@@ -37,8 +37,19 @@ public class Role {
 	}
 	@Override
 	public boolean equals(Object obj) {
+		
+		
+		if(this == obj) {
+			return true;
+		}
+		
+		if(! (obj instanceof Role)) {
+			
+			return false;
+		}
+		
 		Role role = (Role) obj;
-		return super.equals(obj);
+		return ((this.id != null) && (this.id.equals(role.id)));
 	}
 	
 	
