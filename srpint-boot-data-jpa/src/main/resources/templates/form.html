@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 th:text="${titulo}"></h1>
+
+	<form th:action="@{/form}" th:object="${cliente}">
+		<table>
+
+				
+
+
+			<tr>
+				<td>Nombre</td>
+				<td><input type="text" th:field="*{nombre}" /></td>
+			</tr>
+
+			<tr>
+				<td>Apellido</td>
+				<td><input type="text" th:field="*{nombre}"/></td>
+			</tr>
+
+			<tr>
+				<td></td>
+			</tr>
+
+		</table>
+
+<input type="hidden" th:field="*{id}"  />
+
+	</form>
+
+</body>
+</html>
